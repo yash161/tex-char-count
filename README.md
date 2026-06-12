@@ -11,16 +11,29 @@ python3 tex_char_count.py -r examples/reference.tex -i examples/input.tex -o out
 
 ## API (Vercel)
 
-### Deploy
+### Deploy (GitHub → Vercel, recommended)
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. From this directory: `vercel`
-3. In [Vercel Dashboard](https://vercel.com) → Project → Settings → Environment Variables:
-   - `GEMINI_API_KEY` = your Gemini API key
-   - Optional: `GEMINI_MODEL` = `gemini-flash-latest`
-   - Optional: `MAX_RL_ATTEMPTS` = `5`
+1. Open: [Import tex-char-count on Vercel](https://vercel.com/new/clone?repository-url=https://github.com/yash161/tex-char-count)
+2. Add environment variable: `GEMINI_API_KEY` = your Gemini API key
+3. Click **Deploy**
 
-4. Redeploy after adding env vars: `vercel --prod`
+Your API base URL will be: `https://tex-char-count.vercel.app` (or similar)
+
+### Deploy (CLI)
+
+```bash
+npx vercel login
+npx vercel --prod
+npx vercel env add GEMINI_API_KEY   # paste key when prompted
+npx vercel --prod                   # redeploy with env var
+```
+
+### Test locally
+
+```bash
+python3 test_api_local.py
+GEMINI_API_KEY=your-key python3 test_api_local.py   # includes /api/shorten
+```
 
 ### Endpoints
 
