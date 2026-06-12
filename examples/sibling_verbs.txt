@@ -1,0 +1,5 @@
+# Opening verbs already used by the other 3 bullets in this job section.
+# One verb per line. This bullet must NOT start with any of these.
+Optimized
+Deployed
+Redesigned

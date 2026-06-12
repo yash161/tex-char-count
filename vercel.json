@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/shorten.py": {
+      "maxDuration": 60
+    },
+    "api/count.py": {
+      "maxDuration": 10
+    }
+  }
+}

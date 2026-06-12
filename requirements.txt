@@ -1,0 +1,1 @@
+# Python stdlib only. Set GEMINI_API_KEY in Vercel project settings.
