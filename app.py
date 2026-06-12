@@ -1,8 +1,4 @@
 import os
-import sys
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-
 from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException

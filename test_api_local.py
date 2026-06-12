@@ -5,10 +5,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "api"))
-
 from fastapi.testclient import TestClient
-from index import app
+from app import app
 
 REF = open(os.path.join(os.path.dirname(__file__), "examples/reference.tex")).read()
 INP = open(os.path.join(os.path.dirname(__file__), "examples/input.tex")).read()
