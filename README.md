@@ -17,7 +17,7 @@ python3 tex_char_count.py -r examples/reference.tex -i examples/input.tex -o out
 2. Add environment variable: `GEMINI_API_KEY` = your Gemini API key
 3. Click **Deploy**
 
-Your API base URL will be: `https://tex-char-count.vercel.app` (or similar)
+**Live API:** `https://counter-kohl-nine.vercel.app`
 
 ### Deploy (CLI)
 
